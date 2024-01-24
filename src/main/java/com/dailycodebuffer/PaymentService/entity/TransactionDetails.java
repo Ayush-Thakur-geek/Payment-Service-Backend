@@ -2,16 +2,18 @@ package com.dailycodebuffer.PaymentService.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.Instant;
 
 @Entity
-@Table(name = "TRABNSACTION_DETAILS")
+@Table(name = "TRANSACTION_DETAILS")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class TransactionDetails {
 
     @Id
